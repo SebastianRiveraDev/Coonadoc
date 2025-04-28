@@ -28,7 +28,7 @@ p {
 
 /* Formulario */
 form {
-  background: #d5f5d5;
+  background: #e8f3ee;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
@@ -63,6 +63,7 @@ textarea.form-control:focus {
   border-radius: 30px;
   padding: 10px 25px;
   font-weight: 600;
+  color: #333;
 }
 
 .btn-primary:hover {
@@ -72,7 +73,7 @@ textarea.form-control:focus {
 
 /* Sección de otros medios de contacto */
 .mt-4 {
-  background: rgb(243, 188, 124);
+  background: rgb(239, 226, 178);
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
