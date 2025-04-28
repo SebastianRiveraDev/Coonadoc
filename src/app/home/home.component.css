@@ -1,18 +1,39 @@
-.container {
-    background-color: #f4f7f6;
-    border-radius: 8px;
-    padding: 40px;
-  }
-  
-  h1, h3 {
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .card {
-    border-radius: 8px;
-  }
-  
-  .card-body {
-    background-color: #fff;
-  }
-  
+.home-container {
+  background-color: #f9f9f9; /* Color de fondo claro */
+  color: #333333; /* Texto gris oscuro */
+  min-height: 100vh;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.carousel-inner img {
+  border-radius: 8px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.home-message h1 {
+  color: #00A650; /* Verde institucional */
+  font-weight: bold;
+}
+
+.home-message p {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+.btn-green {
+  background-color: #00D100;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.btn-green:hover {
+  background-color: #00B300;
+}
