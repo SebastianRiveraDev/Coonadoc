@@ -79,3 +79,10 @@
   background-color: var(--light-orange);
 }
 
+#carouselExampleIndicators .carousel-inner {
+  height: 400px; /* Altura fija del carrusel */
+}
+#carouselExampleIndicators .carousel-inner img {
+  height: 100%; /* La imagen ocupa todo el alto del carrusel */
+  object-fit: cover; /* Recorta imagen para llenar bien sin deformarla */
+}
