@@ -1,14 +1,93 @@
+/* Colores oficiales COONADOC */
+:root {
+  --light-green: #22CC23;   /* Verde claro */
+  --dark-green: #228B22;    /* Verde oscuro */
+  --light-orange: #FFA420;  /* Naranja claro */
+  --dark-orange: #FF5400;   /* Naranja oscuro */
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+}
+
 .container {
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    padding: 40px;
-  }
-  
-  h2 {
-    font-family: 'Arial', sans-serif;
-  }
-  
-  button {
-    margin-top: 10px;
-  }
-  
+  margin-top: 2rem;
+}
+
+/* Títulos */
+h2, h4 {
+  color: var(--dark-green);
+  font-weight: bold;
+}
+
+p {
+  color: #6c757d; /* Bootstrap muted text */
+}
+
+/* Formulario */
+form {
+  background: #d5f5d5;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-weight: 600;
+  color: var(--dark-green);
+}
+
+input.form-control,
+textarea.form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 10px 15px;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+  border-color: var(--light-green);
+  box-shadow: 0 0 0 0.2rem rgba(34, 204, 35, 0.25);
+}
+
+/* Botón enviar */
+.btn-primary {
+  background-color: var(--dark-green);
+  border-color: var(--dark-green);
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: var(--light-green);
+  border-color: var(--light-green);
+}
+
+/* Sección de otros medios de contacto */
+.mt-4 {
+  background: rgb(243, 188, 124);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  margin-top: 2rem;
+}
+
+ul {
+  padding-left: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+li strong {
+  color: var(--dark-orange);
+}
