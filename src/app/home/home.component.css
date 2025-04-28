@@ -86,3 +86,8 @@
   height: 100%; /* La imagen ocupa todo el alto del carrusel */
   object-fit: cover; /* Recorta imagen para llenar bien sin deformarla */
 }
+
+.my-text-green {
+  color: #FF5400;
+}
+
