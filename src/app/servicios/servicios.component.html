@@ -1,36 +1,70 @@
-<div class="container">
-    <h2 class="my-4">Nuestros Servicios</h2>
-    <div class="row">
+<div class="coonadoc-services-container">
+  <div class="container py-5">
+    <!-- Título con estilo corporativo -->
+    <h2 class="coonadoc-section-title text-center mb-5">
+      <span class="title-text">Nuestros Servicios</span>
+    </h2>
+
+    <div class="row g-4">
+      <!-- Servicio 1 - Cuentas Bancarias -->
       <div class="col-md-4">
-        <div class="card shadow-sm">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Cuenta Bancaria">
-          <div class="card-body">
-            <h5 class="card-title">Cuentas Bancarias</h5>
-            <p class="card-text">Gestione su dinero con total seguridad. Cuentas de ahorro y corriente.</p>
-            <a href="#" class="btn btn-primary">Más Información</a>
+        <div class="coonadoc-service-card">
+          <div class="service-header bg-success-light">
+            <i class="bi bi-bank service-icon"></i>
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">Cuentas Bancarias</h3>
+            <p class="service-description">
+              Gestione su dinero con nuestras cuentas de ahorro y corriente con beneficios exclusivos para docentes.
+            </p>
+            <div class="text-center">
+              <a routerLink="/servicios/cuentas" class="coonadoc-btn-primary">
+                <i class="bi bi-arrow-right-circle me-2"></i>Conocer más
+              </a>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Servicio 2 - Tarjetas -->
       <div class="col-md-4">
-        <div class="card shadow-sm">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Tarjetas de Crédito">
-          <div class="card-body">
-            <h5 class="card-title">Tarjetas de Crédito</h5>
-            <p class="card-text">Solicite una tarjeta de crédito con grandes beneficios.</p>
-            <a href="#" class="btn btn-primary">Más Información</a>
+        <div class="coonadoc-service-card">
+          <div class="service-header bg-warning-light">
+            <i class="bi bi-credit-card service-icon"></i>
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">Tarjetas de Crédito</h3>
+            <p class="service-description">
+              Beneficios exclusivos y tasas preferenciales en nuestras tarjetas de crédito.
+            </p>
+            <div class="text-center">
+              <a routerLink="/servicios/tarjetas" class="coonadoc-btn-primary">
+                <i class="bi bi-arrow-right-circle me-2"></i>Conocer más
+              </a>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Servicio 3 - Préstamos -->
       <div class="col-md-4">
-        <div class="card shadow-sm">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Préstamos">
-          <div class="card-body">
-            <h5 class="card-title">Préstamos Personales</h5>
-            <p class="card-text">Consiga préstamos personales con tasas competitivas.</p>
-            <a href="#" class="btn btn-primary">Más Información</a>
+        <div class="coonadoc-service-card">
+          <div class="service-header bg-success-dark">
+            <i class="bi bi-cash-coin service-icon"></i>
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">Préstamos Personales</h3>
+            <p class="service-description">
+              Soluciones crediticias flexibles adaptadas a las necesidades de los docentes.
+            </p>
+            <div class="text-center">
+              <a routerLink="/servicios/prestamos" class="coonadoc-btn-primary">
+                <i class="bi bi-arrow-right-circle me-2"></i>Conocer más
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
+</div>
