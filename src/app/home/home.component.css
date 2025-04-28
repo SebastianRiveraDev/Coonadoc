@@ -1,39 +1,80 @@
-.home-container {
-  background-color: #f9f9f9; /* Color de fondo claro */
-  color: #333333; /* Texto gris oscuro */
-  min-height: 100vh;
-  padding-top: 60px;
-  padding-bottom: 40px;
+/* Colores oficiales COONADOC */
+:root {
+  --light-green: #22CC23;   /* Verde claro */
+  --dark-green: #228B22;    /* Verde oscuro */
+  --light-orange: #FFA420;  /* Naranja claro */
+  --dark-orange: #FF5400;   /* Naranja oscuro */
+}
+
+/* Estilos generales */
+.coonadoc-home {
   font-family: 'Roboto', sans-serif;
 }
 
-.carousel-inner img {
-  border-radius: 8px;
-  max-height: 400px;
-  object-fit: cover;
+/* Hero Banner */
+.hero-banner {
+  padding: 4rem 0;
+  border-bottom: 8px solid var(--dark-green);
 }
 
-.home-message h1 {
-  color: #00A650; /* Verde institucional */
-  font-weight: bold;
+.logo-header {
+  max-height: 80px;
 }
 
-.home-message p {
-  margin-top: 15px;
-  font-size: 1.2rem;
-}
-
-.btn-green {
-  background-color: #00D100;
-  border: none;
+/* Botones */
+.btn-dark-green {
+  background-color: var(--dark-green);
   color: white;
-  padding: 12px 24px;
-  font-size: 1.2rem;
+  border: none;
+  padding: 10px 25px;
   border-radius: 30px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: background-color 0.3s ease;
+  font-weight: 600;
 }
 
-.btn-green:hover {
-  background-color: #00B300;
+.btn-outline-naranja {
+  border: 2px solid var(--dark-orange);
+  color: var(--dark-orange);
+  background: transparent;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+/* Tarjetas de servicios */
+.service-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  height: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s;
+  border-top: 4px solid transparent;
+}
+
+.bg-light-green-hover:hover {
+  background-color: rgba(34, 204, 35, 0.1);
+  border-top-color: var(--light-green);
+}
+
+/* Títulos */
+.section-title {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: var(--dark-orange);
+}
+
+/* CTA Section */
+.cta-section {
+  background-color: var(--light-orange);
 }
