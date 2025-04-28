@@ -1,14 +1,151 @@
-.card {
-    border-radius: 10px;
-    transition: transform 0.3s;
+/* Variables de color COONADOC */
+:root {
+  --coonadoc-green: #228B22;
+  --coonadoc-light-green: #22CC23;
+  --coonadoc-orange: #FF5400;
+  --coonadoc-light-orange: #FFA420;
+  --coonadoc-gray: #F8F9FA;
+}
+
+/* Estructura principal */
+.coonadoc-services-container {
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+}
+
+/* Hero Banner */
+.services-hero-banner {
+  background: linear-gradient(135deg, var(--coonadoc-green) 0%, var(--coonadoc-light-green) 100%);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.services-main-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.highlight-orange {
+  color: var(--coonadoc-light-orange);
+}
+
+.services-subtitle {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+/* Menú de servicios */
+.services-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.service-category-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-top: 4px solid transparent;
+}
+
+.service-category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Colores de las tarjetas */
+.formatos-card {
+  border-top-color: var(--coonadoc-green);
+}
+
+.politicas-card {
+  border-top-color: var(--coonadoc-orange);
+}
+
+.educacion-card {
+  border-top-color: var(--coonadoc-light-green);
+}
+
+.seguros-card {
+  border-top-color: var(--coonadoc-light-orange);
+}
+
+/* Contenido de tarjetas */
+.category-icon {
+  background-color: var(--coonadoc-gray);
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--coonadoc-green);
+}
+
+.service-category-card h3 {
+  color: var(--coonadoc-green);
+  padding: 0 1.5rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.service-items {
+  padding: 1.5rem;
+  list-style: none;
+}
+
+.service-items li {
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.service-items li:before {
+  content: "•";
+  color: var(--coonadoc-orange);
+  position: absolute;
+  left: 0;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.service-items a {
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.service-items a:hover {
+  color: var(--coonadoc-orange);
+  padding-left: 5px;
+}
+
+.view-more {
+  padding: 0 1.5rem 1.5rem;
+  text-align: right;
+}
+
+.btn-view-more {
+  color: var(--coonadoc-green);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-view-more:hover {
+  color: var(--coonadoc-orange);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services-main-title {
+    font-size: 2.2rem;
   }
   
-  .card:hover {
-    transform: scale(1.05);
+  .services-menu {
+    grid-template-columns: 1fr;
   }
-  
-  .card-body {
-    background-color: #fff;
-    text-align: center;
-  }
-  
+}
