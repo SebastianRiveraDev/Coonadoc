@@ -11,39 +11,36 @@
 .coonadoc-services-container {
   font-family: 'Roboto', sans-serif;
   background-color: white;
+  padding: 20px;
 }
 
-/* Hero Banner */
+/* Hero Banner responsive */
 .services-hero-banner {
-  background: linear-gradient(135deg, var(--coonadoc-green) 0%, var(--coonadoc-light-green) 100%);
+  background: url('/assets/fondoServicios.png') no-repeat center center;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   color: white;
   padding: 4rem 0;
-  text-align: center;
   margin-bottom: 3rem;
 }
 
-.services-main-title {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+/* Mejoramos la visibilidad del texto */
+.services-main-title, .services-subtitle {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
 }
 
-.highlight-orange {
-  color: var(--coonadoc-light-orange);
-}
-
-.services-subtitle {
-  font-size: 1.25rem;
-  opacity: 0.9;
-}
-
-/* Menú de servicios */
+/* Menú de servicios (manteniendo tu diseño) */
 .services-menu {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
 
+/* Tarjetas de servicio (sin cambios en diseño) */
 .service-category-card {
   background: white;
   border-radius: 12px;
@@ -108,7 +105,6 @@
   position: absolute;
   left: 0;
   font-size: 1.5rem;
-  line-height: 1;
 }
 
 .service-items a {
@@ -122,6 +118,7 @@
   padding-left: 5px;
 }
 
+/* Botón Ver más */
 .view-more {
   padding: 0 1.5rem 1.5rem;
   text-align: right;
@@ -139,7 +136,14 @@
   color: var(--coonadoc-orange);
 }
 
-/* Responsive */
+/* Responsividad ajustada */
+@media (max-width: 992px) {
+  .services-hero-banner {
+    height: 60vh;
+    padding: 3rem 0;
+  }
+}
+
 @media (max-width: 768px) {
   .services-main-title {
     font-size: 2.2rem;
@@ -147,5 +151,15 @@
   
   .services-menu {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .service-category-card {
+    width: 100%;
+  }
+
+  .services-hero-banner {
+    height: 50vh;
+    padding: 1.5rem 0;
   }
 }
