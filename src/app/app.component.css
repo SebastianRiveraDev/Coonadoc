@@ -41,16 +41,19 @@
 }
 
 .whatsapp-float img {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
 }
 
 .footer {
   background-image: url('../assets/fondo2.png');
-  color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 40px 20px 20px;
   font-family: Arial, sans-serif;
 }
+
 
 .footer-columns {
   display:flex;
