@@ -7,16 +7,11 @@ body[data-bs-theme='light'] .online-title {
     color: #003366; 
   }
 
-/* Tema claro */
-body[data-bs-theme='light'] .colorServicios {
-    color: #003366; /* Azul oscuro que se ve bien sobre fondo claro */
-  }
   
+  /* Tema oscuro */
   body[data-bs-theme='dark'] .colorServicios {
-    color: var(--bs-body-color);
+    color: #003366 !important;
   }
-  
-  
   
   
   /* Tema claro */
