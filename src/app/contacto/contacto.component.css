@@ -71,15 +71,6 @@ textarea.form-control:focus {
   border-color: var(--light-green);
 }
 
-/* Sección de otros medios de contacto */
-.mt-4 {
-  background: rgb(239, 226, 178);
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  margin-top: 2rem;
-}
-
 ul {
   padding-left: 1rem;
 }

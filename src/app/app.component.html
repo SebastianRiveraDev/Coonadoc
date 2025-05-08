@@ -32,34 +32,27 @@
 
 <router-outlet></router-outlet>
 
-<!-- Aquí empieza el Mapa -->
-<div class="mapa-container mt-5">
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.539423419266!2d-74.09008382424234!3d4.675871795299058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b002f1b6727%3A0x1824e35238b43072!2sCampus%20UCompensar%20Av.%2068!5e0!3m2!1ses-419!2sco!4v1745875470370!5m2!1ses-419!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-</div>
+<footer class="footer">
+  <!-- Contenido del lado izquierdo -->
+  <div class="footer-info">
+    <h3>Contacto:</h3>
+    <p>Atención al cliente +57 311 5019158</p>
+    <p>Linea fija +57 601 7523313</p>
+    <p>Email: gerenciacoonadoc.co</p>
+    <p>Email: servicioalclientecoonadocgmail.com</p>
+  </div>
 
-<!-- Estilos para el mapa -->
-<style>
-  .mapa-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 16.25%;
-    /* Relación 16:9 */
-    height: 0;
-    overflow: hidden;
-    border-radius: 12px;
-    /* Bordes redondeados */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    /* Sombra ligera */
-  }
+  <!-- Mapa a la derecha -->
+  <div class="mapa-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.539423419266!2d-74.09008382424234!3d4.675871795299058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b002f1b6727%3A0x1824e35238b43072!2sCampus%20UCompensar%20Av.%2068!5e0!3m2!1ses-419!2sco!4v1745875470370!5m2!1ses-419!2sco" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
 
-  .mapa-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
-</style>
+  <div class="footer-bottom">
+    <p>Copyright las Rubias y el colado©</p>
+  </div>
+</footer>
+
