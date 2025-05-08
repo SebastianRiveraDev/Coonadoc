@@ -1,12 +1,10 @@
-/* Colores oficiales COONADOC */
 :root {
-  --light-green: #22CC23;   /* Verde claro */
-  --dark-green: #228B22;    /* Verde oscuro */
-  --light-orange: #FFA420;  /* Naranja claro */
-  --dark-orange: #FF5400;   /* Naranja oscuro */
+  --light-green: #22CC23;  
+  --dark-green: #228B22;   
+  --light-orange: #FFA420; 
+  --dark-orange: #FF5400;  
 }
 
-/* Estilos generales */
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #ffffff;
@@ -16,17 +14,15 @@ body {
   margin-top: 2rem;
 }
 
-/* Títulos */
 h2, h4 {
   color: var(--dark-green);
   font-weight: bold;
 }
 
 p {
-  color: #6c757d; /* Bootstrap muted text */
+  color: #6c757d; 
 }
 
-/* Formulario */
 form {
   background: #e8f3ee;
   padding: 2rem;
@@ -56,7 +52,6 @@ textarea.form-control:focus {
   box-shadow: 0 0 0 0.2rem rgba(34, 204, 35, 0.25);
 }
 
-/* Botón enviar */
 .btn-primary {
   background-color: var(--dark-green);
   border-color: var(--dark-green);

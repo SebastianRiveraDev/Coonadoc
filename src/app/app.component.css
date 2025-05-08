@@ -116,15 +116,12 @@
   margin-top: 30px;
 }
 
-/* Estilos personalizados para el tema oscuro */
 [data-bs-theme="dark"] {
-  /* Variables generales del tema oscuro */
   --bs-body-bg: #121212;
   --bs-body-color: #e0e0e0;
-  --bs-primary: #00a651;  /* Usando un verde similar al de tu logo COONADOC */
-  --bs-secondary: #f7921e; /* Naranja similar al de tu logo */
+  --bs-primary: #00a651;  
+  --bs-secondary: #f7921e;
   
-  /* Específicos para el navbar */
   --bs-navbar-color: rgba(255, 255, 255, 0.85);
   --bs-navbar-hover-color: rgba(255, 255, 255, 1);
   --bs-navbar-active-color: rgba(255, 255, 255, 1);
@@ -132,12 +129,10 @@
   --bs-navbar-brand-hover-color: rgba(255, 255, 255, 1);
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   
-  /* Específico para clases de fondo */
   --bs-light-rgb: 33, 37, 41;
   --bs-dark-rgb: 248, 249, 250;
 }
 
-/* Estilo específico para la navbar en tema oscuro */
 [data-bs-theme="dark"] .navbar-light {
   background-color: #1e1e1e !important;
 }
@@ -151,7 +146,6 @@
   color: rgba(255, 255, 255, 1);
 }
 
-/* Estilo para el botón de toggle en tema oscuro */
 [data-bs-theme="dark"] .btn-outline-light {
   color: #ffffff;
   border-color: #ffffff;
@@ -163,9 +157,7 @@
   border-color: #ffffff;
 }
 
-/* Ajuste para el footer en tema oscuro */
 [data-bs-theme="dark"] footer {
-  /* Añade un fondo más oscuro o un overlay para que se vea mejor */
   background-color: rgba(0, 0, 0, 0.7);
   background-blend-mode: multiply;
 }

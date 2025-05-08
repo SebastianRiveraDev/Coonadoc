@@ -1,17 +1,14 @@
-/* Colores oficiales COONADOC */
 :root {
-  --light-green: #22CC23;   /* Verde claro */
-  --dark-green: #228B22;    /* Verde oscuro */
-  --light-orange: #FFA420;  /* Naranja claro */
-  --dark-orange: #FF5400;   /* Naranja oscuro */
+  --light-green: #22CC23;   
+  --dark-green: #228B22;    
+  --light-orange: #FFA420; 
+  --dark-orange: #FF5400;  
 }
 
-/* Estilos generales */
 .coonadoc-home {
   font-family: 'Roboto', sans-serif;
 }
 
-/* Hero Banner */
 .hero-banner {
   padding: 4rem 0;
   border-bottom: 8px solid var(--dark-green);
@@ -21,7 +18,6 @@
   max-height: 80px;
 }
 
-/* Botones */
 .btn-dark-green {
   background-color: var(--dark-green);
   color: white;
@@ -40,7 +36,6 @@
   font-weight: 600;
 }
 
-/* Tarjetas de servicios */
 .service-card {
   background: white;
   border-radius: 12px;
@@ -57,7 +52,6 @@
   border-top-color: var(--light-green);
 }
 
-/* Títulos */
 .section-title {
   position: relative;
   padding-bottom: 15px;
@@ -74,7 +68,6 @@
   background-color: var(--dark-orange);
 }
 
-/* CTA Section */
 .cta-section {
   background-color: var(--light-orange);
 }
