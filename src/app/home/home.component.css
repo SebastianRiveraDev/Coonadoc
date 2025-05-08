@@ -87,4 +87,7 @@
   object-fit: cover; 
 }
 
-
+.borderblank {
+  border: 1px solid #FF5400;
+  border-radius: 10px;
+}

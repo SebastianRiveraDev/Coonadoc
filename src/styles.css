@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+body[data-bs-theme='light'] .online-title {
+    color: #003366; 
+  }
+  
+  body[data-bs-theme='dark'] .online-title {
+    color: #003366; 
+  }
+
+/* Tema claro */
+body[data-bs-theme='light'] .colorServicios {
+    color: #003366; /* Azul oscuro que se ve bien sobre fondo claro */
+  }
+  
+  body[data-bs-theme='dark'] .colorServicios {
+    color: var(--bs-body-color);
+  }
+  
+  
+  
+  
+  /* Tema claro */
+body[data-bs-theme='light'] input,
+body[data-bs-theme='light'] textarea {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #ccc;
+}
+
+/* Tema oscuro */
+body[data-bs-theme='dark'] input,
+body[data-bs-theme='dark'] textarea {
+  background-color: #2c2f33;
+  color: #ffffff;
+  border: 1px solid #666;
+}
+
+/* Mostrar solo en modo claro */
+body[data-bs-theme='light'] .theme-light {
+    display: block !important;
+  }
+  body[data-bs-theme='light'] .theme-dark {
+    display: none !important;
+  }
+  
+  /* Mostrar solo en modo oscuro */
+  body[data-bs-theme='dark'] .theme-light {
+    display: none !important;
+  }
+  body[data-bs-theme='dark'] .theme-dark {
+    display: block !important;
+  }
+  
