@@ -1,4 +1,3 @@
-/* Variables de color COONADOC */
 :root {
   --coonadoc-green: #228B22;
   --coonadoc-light-green: #22CC23;
@@ -7,14 +6,12 @@
   --coonadoc-gray: #F8F9FA;
 }
 
-/* Estructura principal */
 .coonadoc-services-container {
   font-family: 'Roboto', sans-serif;
   background-color: white;
   padding: 20px;
 }
 
-/* Hero Banner responsive */
 .services-hero-banner {
   background: url('/assets/fondoServicios.png') no-repeat center center;
   background-size: cover;
@@ -28,19 +25,16 @@
   margin-bottom: 3rem;
 }
 
-/* Mejoramos la visibilidad del texto */
 .services-main-title, .services-subtitle {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
 }
 
-/* Menú de servicios (manteniendo tu diseño) */
 .services-menu {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
 
-/* Tarjetas de servicio (sin cambios en diseño) */
 .service-category-card {
   background: white;
   border-radius: 12px;
@@ -55,7 +49,6 @@
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
 }
 
-/* Colores de las tarjetas */
 .formatos-card {
   border-top-color: var(--coonadoc-green);
 }
@@ -72,7 +65,6 @@
   border-top-color: var(--coonadoc-light-orange);
 }
 
-/* Contenido de tarjetas */
 .category-icon {
   background-color: var(--coonadoc-gray);
   padding: 1.5rem;
@@ -118,7 +110,6 @@
   padding-left: 5px;
 }
 
-/* Botón Ver más */
 .view-more {
   padding: 0 1.5rem 1.5rem;
   text-align: right;
@@ -136,7 +127,6 @@
   color: var(--coonadoc-orange);
 }
 
-/* Responsividad ajustada */
 @media (max-width: 992px) {
   .services-hero-banner {
     height: 60vh;
