@@ -84,3 +84,7 @@
   border: 1px solid #FF5400;
   border-radius: 10px;
 }
+
+video {
+  padding: 50px;
+}
