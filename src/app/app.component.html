@@ -1,37 +1,49 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
 
-<nav class="navbar navbar-expand-lg">
-  <a href="/#">
-    <img src="../assets/LogoColor.svg" style="height: 90px;">
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-    aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/servicios" href="servicios/">Servicios</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/contacto" href="contacto/">Contacto</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/online" href="online/">Online</a>
-      </li>
-      <li class="nav-item">
-        <button class="btn" [ngClass]="{'btn-outline-dark': isLightTheme(), 'btn-outline-light': !isLightTheme()}" (click)="toggleTheme()">
-          <i class="bi" [ngClass]="{'bi-sun-fill': !isLightTheme(), 'bi-moon-stars-fill': isLightTheme()}"></i>
-        </button>
-      </li>
+<div style="height: 90px;"></div>
 
-    </ul>
+<nav class="navbar navbar-expand-lg"
+     [ngClass]="isLightTheme() ? 'light-theme-navbar' : 'dark-theme-navbar'"
+     style="position: fixed; top: 0; width: 100%; z-index: 999;">
+  <div class="container-fluid">
+    <a href="/#">
+      <img src="../assets/LogoColor.svg" style="height: 90px;">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="servicios/">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto/">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="online/">Online</a>
+        </li>
+        <li class="nav-item">
+          <button class="btn"
+            [ngClass]="isLightTheme() ? 'btn-outline-dark' : 'btn-outline-light'"
+            (click)="toggleTheme()">
+            <i class="bi"
+              [ngClass]="isLightTheme() ? 'bi-moon-stars-fill' : 'bi-sun-fill'">
+            </i>
+          </button>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
+
 <a href="https://wa.me/573115019158" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
   <img src="../assets/WhatsApp2.png" alt="WhatsApp" width="120" height="120" />
 </a>

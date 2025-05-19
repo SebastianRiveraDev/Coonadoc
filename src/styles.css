@@ -45,4 +45,19 @@ body[data-bs-theme='light'] .theme-light {
   body[data-bs-theme='dark'] .theme-dark {
     display: block !important;
   }
+
+  .light-theme-navbar {
+  background-color: white !important;
+  color: black;
+  border-bottom: 1px solid #228B22;
+  transition: background-color 0.3s ease;
+}
+
+.dark-theme-navbar {
+  background-color: #2c2f33 !important;
+  color: white;
+  border-bottom: 1px solid #FF5400;
+  transition: background-color 0.3s ease;
+}
+
   
